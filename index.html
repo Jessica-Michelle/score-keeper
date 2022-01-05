@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Score Keeper</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="ui container">
+			<div class="ui centered card" style="width: 500px">
+				<div class="content">
+					<h1>Score Keeper</h1>
+					<img class="ui image" src="/images/pexels-pixabay-207924.jpg" />
+					<h1><span id="p1Display">0</span> : <span id="p2Display">0</span></h1>
+					<p class="ui medium header">Use the buttons below to keep score</p>
+
+					<div class="selectdiv">
+						<label class="ui medium header">Playing to</label>
+						<select
+							name="score-select"
+							id="playto"
+							class="ui selection dropdown"
+						>
+							<option class="item"></option>
+							<option class="item" value="3">3</option>
+							<option class="item" value="4">4</option>
+							<option class="item" value="5">5</option>
+							<option class="item" value="6">6</option>
+							<option class="item" value="7">7</option>
+							<option class="item" value="8">8</option>
+							<option class="item" value="9">9</option>
+						</select>
+						<span class="custom-arrow"></span>
+					</div>
+				</div>
+
+				<div class="extra content">
+					<div class="ui three buttons">
+						<button class="ui purple button" id="p1Button">+1 Player 1</button>
+						<button class="ui pink button" id="p2Button">+1 Player 2</button>
+						<button class="ui button" id="reset">Reset</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('.ui.dropdown').dropdown();
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>

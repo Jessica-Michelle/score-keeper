@@ -1,0 +1,82 @@
+.container {
+	margin-top: 2rem;
+}
+
+.ui.card > .content {
+	background-color: #f6f7f8;
+}
+
+.box {
+	display: flex;
+	justify-content: space-around;
+}
+
+h1 {
+	color: #363f44;
+}
+
+.ui.header {
+	color: #363f44;
+}
+
+.ui.card > .content > .header {
+	color: #363f44;
+}
+
+select {
+	appearance: none;
+	margin-left: 1rem;
+}
+
+.selectdiv {
+	position: relative;
+}
+
+.custom-arrow {
+	position: absolute;
+	top: 0;
+	right: 13.25rem;
+	display: block;
+	background: url('./images/arrow.png') no-repeat center;
+	height: 100%;
+	width: 2rem;
+	pointer-events: none;
+}
+
+.winner {
+	color: #16db93;
+}
+.loser {
+	color: #fb4d3d;
+}
+
+/* less than or equal to 700px */
+@media (max-width: 700px) {
+	.custom-arrow {
+		right: 2.25rem;
+	}
+}
+
+@media (min-width: 532px) and (max-width: 699px) {
+	.custom-arrow {
+		right: 13.25rem;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+	.custom-arrow {
+		right: 5.25rem;
+	}
+}
+
+@media (max-width: 320px) {
+	select {
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+
+	.custom-arrow {
+		top: 1.25rem;
+		right: 5.25rem;
+	}
+}
