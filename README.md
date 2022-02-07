@@ -1,7 +1,3 @@
-# Score Keeper
-
-# Technologies
-- JavaScript
-- HTML
-- CSS
-- Semantic UI
+# score-keeper
+# score-keeper
+# score-keeper
